@@ -1,0 +1,129 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: blue;
+}
+
+.puppy-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.puppy-list p {
+  border: 2px solid #04702a;
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 8px;
+}
+
+.featured-puppy {
+  background-color: #baf59d;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.featured-puppy h2 {
+  color: #0f6aea;
+}
+
+.featured-puppy ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.featured-puppy li {
+  margin-bottom: 0.5em;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px #17719f, 0 0 20px #ffcb7f, 0 0 30px #ffcb7f,
+      0 0 40px #ffcb7f, 0 0 50px #ffcb7f, 0 0 60px #ffcb7f, 0 0 70px #ffcb7f;
+  }
+
+  50% {
+    text-shadow: 0 0 20px #17719f, 0 0 30px #ffcb7f, 0 0 40px #ffcb7f,
+      0 0 50px #ffcb7f, 0 0 60px #ffcb7f, 0 0 70px #ffcb7f, 0 0 80px #ffcb7f;
+  }
+
+  100% {
+    text-shadow: 0 0 10px #17719f, 0 0 20px #ffcb7f, 0 0 30px #ffcb7f,
+      0 0 40px #ffcb7f, 0 0 50px #ffcb7f, 0 0 60px #ffcb7f, 0 0 70px #ffcb7f;
+  }
+}
+
+h1 {
+  font-size: 4rem;
+  color: #17719f;
+  animation: glow 2s infinite alternate;
+  -webkit-text-stroke: 2px black;
+  /* For webkit browsers */
+  text-shadow: 2px black;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+body {
+  animation: backgroundAnimation 20s linear infinite;
+  background: linear-gradient(45deg, #000000, #bcb0f1, #007bff);
+  background-size: 200% 200%;
+}
